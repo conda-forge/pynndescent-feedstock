@@ -1,5 +1,5 @@
 {% set name = "pynndescent" %}
-{% set version = "0.3.3" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ac02f1cbb2ac0df2f554dee2518fa3b7bb9b9bbe6f27a3bf3794d8a8d9f2f4ae
+  sha256: 05aab86b422ab702ba8f2a20e226c6a7dea44ef94bd908112c7116c52a398716
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
     - setuptools
     - numpy >=1.13
-    - numba >=0.40
+    - numba >=0.45
     - scikit-learn >=0.19
     - scipy >=1.0
 
