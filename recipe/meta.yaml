@@ -10,7 +10,7 @@ source:
   sha256: 43d390ae80793f4c1f8a8096b4ebab4186c3a9c378f7214975480105257ffb4b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv"
 
@@ -23,7 +23,8 @@ requirements:
     - python >=3.6
     - setuptools
     - numpy >=1.13
-    - numba >=0.45
+    - numba ==0.46
+    - llvmlite ==0.30
     - scikit-learn >=0.19
     - scipy >=1.0
 
