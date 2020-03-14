@@ -1,5 +1,5 @@
 {% set name = "pynndescent" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8a6ecf17a9b65e4c8512004af2c006e33c2fb1ba22d20a973765214e61c02278
+  sha256: 815e0eda0e7fcf53e3ef282307d28fb763aac9f67a521fc9f05e4002200add5c
 
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -41,8 +41,8 @@ about:
   home: http://github.com/lmcinnes/pynndescent
   license: BSD-2-Clause
   license_family: BSD
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
-  summary: 'Simple fast approximate nearest neighbor search'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
+  summary: Simple fast approximate nearest neighbor search
 
   description: |
     A Python nearest neighbor descent for approximate nearest neighbors. 
