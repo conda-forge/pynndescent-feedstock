@@ -23,8 +23,8 @@ requirements:
     - python >=3.6
     - setuptools
     - numpy >=1.13
-    - numba ==0.46
-    - llvmlite ==0.30
+    - numba >=0.46
+    - llvmlite >=0.30
     - scikit-learn >=0.19
     - scipy >=1.0
 
