@@ -5,7 +5,7 @@ Home: http://github.com/lmcinnes/pynndescent
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Simple fast approximate nearest neighbor search
 
