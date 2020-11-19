@@ -5,9 +5,11 @@ Home: http://github.com/lmcinnes/pynndescent
 
 Package license: BSD-2-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynndescent-feedstock/blob/master/LICENSE.txt)
 
 Summary: Simple fast approximate nearest neighbor search
+
+Development: https://github.com/lmcinnes/pynndescent
 
 A Python nearest neighbor descent for approximate nearest neighbors.
 This is a relatively straightforward python implementation of
