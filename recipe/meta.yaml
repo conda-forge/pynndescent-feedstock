@@ -1,5 +1,5 @@
 {% set name = "pynndescent" %}
-{% set version = "0.5.5" %}
+{% set version = "0.5.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7a7df8412b19cfb3596060faf5a8c5d0bf5b3bd504f8efd900fc4e3918c6f882
+  sha256: 61fb31885baac469d67933e2c7c935b6edebb06ee498e2f0f9dfc97c59d3725c
 
 build:
   number: 0
