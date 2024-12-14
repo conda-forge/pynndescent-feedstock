@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: d74254c0ee0a1eeec84597d5fe89fedcf778593eeabe32c2f97412934a9800fb
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - setuptools
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - setuptools
     - numpy >=1.13
     - numba >=0.46
@@ -30,7 +30,7 @@ requirements:
 
 test:
   requires:
-    - python
+    - python {{ python_min }}
     - setuptools
   commands:
     - python -c "import pkg_resources; pkg_resources.require('pynndescent')"
